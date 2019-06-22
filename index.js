@@ -43,6 +43,11 @@ client.on('ready', () => {
 client.on('message', msg => {
 	console.log('Received ' + msg.author.username)
 	
+	
+	if (msg.channel.name == 'bot-tests') {
+		return
+    	}
+	
 	//AUTH=======
 	if (msg.content === '12qwaszx' && auth === msg.author.username) {
 		var authcur = Date.now() - authstart;
@@ -78,9 +83,7 @@ client.on('message', msg => {
     //=============
     
     //Bot-tests==========
-    if (msg.channel.name != 'bot-tests') {
-		return msg.reply('This bot only works in bot-tests, if you are an alpha tester')
-    }
+    
     //===================
     
     //kick=============
