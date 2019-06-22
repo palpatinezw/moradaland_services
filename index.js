@@ -106,7 +106,7 @@ client.on('message', msg => {
 	//Help==================
     if (msg.content === '!help') {
         return msg.reply(
-            'Moradaland Services (Alpha) is a test project by The United World Republic to serve as a central assistance bot for Moradans.\n' +
+            'Moradaland Services is a central assistance bot for Moradans by the United World Republic.\n' +
             '!help -- Information about this bot\n' +
             '!citizen -- Information about Moradan Citizenship\n' +
             '!gov -- Information about the Moradan Government\n' +
